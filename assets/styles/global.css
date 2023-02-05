@@ -16,8 +16,19 @@
     --secondary-500: #00569E;
     --secondary-600: #004075;
     --secondary-700: #001C33;
+    --grays-100: #F8FAFB;
+    --grays-150: #E2E6E9;
     --grays-200: #BEC6CC;
+    --grays-300: #959EA6;
+    --grays-400: #6C7680;
     --grays-500: #4B5259;
+    --grays-600: #2B2F33;
+    --grays-700: #0A0B0C;
+    --info-100: #E8F9FC;
+    --info-300: #A0E8F3;
+    --info-400: #17A2B8;
+    --info-500: #0F697A;
+    --info-700: #072F36;
     --border-1: rgba(0, 0, 0, .12);
     --border-2: rgba(0, 0, 0, .2);
     --overlay: rgba(10, 11, 12, .65);
@@ -83,7 +94,7 @@ button {
 
 .box {
     background-color: var(--white);
-    border: var(--border-color);
+    border: 1px solid var(--border-color);
     color: var(--grays-500);
     box-shadow: var(--shadow-color);
     padding: 1rem;

@@ -21,7 +21,7 @@
 .wrapper>header>.container>nav {
     display: flex;
     justify-content: space-between;
-    gap: 6rem;
+    gap: 26rem;
 }
 
 .wrapper>header>.container>nav>div:first-child {
@@ -73,7 +73,7 @@
     right: 0;
     background-color: var(--white);
     box-shadow: var(--shadow-color);
-    border: var(--border-color);
+    border: 1px solid var(--border-color);
     width: 8rem;
     visibility: hidden;
 }
@@ -82,6 +82,7 @@
     padding: 8px 12px;
     min-height: 40px;
     text-align: center;
+    font-size: small;
 }
 
 .wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li.divider {
@@ -126,6 +127,12 @@
 
 .wrapper>header>.container>div a {
     line-height: 2rem;
+}
+
+@media (max-width: 1500px) {
+    .wrapper>header>.container>nav {
+        gap: 6rem;
+    }
 }
 
 @media (max-width: 950px) {

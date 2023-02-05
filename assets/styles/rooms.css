@@ -1,18 +1,38 @@
-.rooms > div {
+.rooms>header>div>button {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: calc(2 * var(--border-radius));
+}
+
+.rooms>header>div>button>span.BB {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: var(--info-100);
+    color: var(--info-500);
+}
+
+.rooms>header>div>button>span.RO {
+    display: inline-block;
+    border-radius: 2px;
+    color: var(--grays-500);
+    background-color: var(--grays-150);
+}
+
+.rooms>div {
     text-align: center;
 }
 
-.rooms > div > article {
+.rooms>div>article {
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
-.rooms > div > article > div:nth-child(2) {
+.rooms>div>article>div:nth-child(2) {
     width: 20%;
 }
 
-.rooms > div > button {
+.rooms>div>button {
     border: 2px solid var(--secondary-400);
     background-color: var(--white);
     margin: 1rem;
@@ -23,6 +43,6 @@
     border-radius: var(--border-radius);
 }
 
-.rooms > div > button:hover{
+.rooms>div>button:hover {
     background-color: var(--secondary-200);
 }
