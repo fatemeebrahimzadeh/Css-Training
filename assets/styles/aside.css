@@ -33,7 +33,7 @@
     font-weight: 700;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .details > aside {
         width: 100%;
         position: static;

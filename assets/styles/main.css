@@ -19,7 +19,7 @@
     direction: ltr;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .details {
         flex-direction: column;
         align-items: center;
