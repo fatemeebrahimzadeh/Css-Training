@@ -76,7 +76,6 @@
     border: var(--border-color);
     width: 8rem;
     visibility: hidden;
-    /* transition: visibility 1s; */
 }
 
 .wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li:not(.divider) {
@@ -135,7 +134,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .wrapper>header>.container>nav {
         padding: 0;
     }
