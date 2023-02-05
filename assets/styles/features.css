@@ -1,0 +1,36 @@
+.features {
+    width: 100%;
+}
+
+.features > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features > header > button {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    height: 50%;
+    border-radius: var(--border-radius);
+}
+
+.features > header > button:hover {
+    background-color: var(--secondary-lighter-color);
+    border: 1px solid #c9e3f8;
+}
+
+.features > div {
+    display: flex;
+}
+
+.features > div > ul {
+    width: 100%;
+}
+
+.features > div > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

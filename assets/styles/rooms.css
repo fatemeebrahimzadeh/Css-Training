@@ -1,0 +1,28 @@
+.rooms > div {
+    text-align: center;
+}
+
+.rooms > div > article {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms > div > article > div:nth-child(2) {
+    width: 20%;
+}
+
+.rooms > div > button {
+    border: 2px solid var(--secondary-color);
+    background-color: white;
+    margin: 1rem;
+    padding: 0.25rem 2rem;
+    font-weight: 800;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+.rooms > div > button:hover{
+    background-color: var(--secondary-lighter-color);
+}

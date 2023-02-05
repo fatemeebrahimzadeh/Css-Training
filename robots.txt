@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /search
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Disallow: /wishlist
+
+Sitemap: https://www.alibabatravel.com/sitemap.xml
