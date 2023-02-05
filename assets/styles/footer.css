@@ -1,5 +1,65 @@
-.wrapper > footer {
-
-    height: 300px;
+.wrapper>footer {
     background-color: var(--white);
+}
+
+.wrapper>footer>.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+footer>.container>div:first-child {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us {
+    text-align: left;
+}
+
+.about-us *{
+    margin: 0.5rem;
+}
+
+.about-us>img {
+    height: 30px;
+}
+
+.about-us>a {
+    display: inline-block;
+    padding: 0;
+}
+
+.about-us>a>img {
+    width: 69px;
+    height: 69px;
+}
+
+.truncate {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--grays-200);
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-media>div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }

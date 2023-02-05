@@ -6,9 +6,10 @@ div.modal-container {
     height: 100%;
     z-index: 200;
     background-color: #4b4b4b99;
-    display: flex;
+    display: none;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 div.modal-container .box {
