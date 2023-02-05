@@ -1,4 +1,4 @@
-.wrapper > header {
+.wrapper>header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,54 +14,58 @@
     transition: transform 0.2s ease-out; */
 }
 
-.wrapper > header > nav {
-    padding: 0.5rem 4rem;
-    display: flex;
-    justify-content: space-between;
+.wrapper>header>.container {
+    margin: auto;
 }
 
-.wrapper > header > nav > div:first-child {
+.wrapper>header>.container>nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.wrapper>header>.container>nav>div:first-child {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
 }
 
-.wrapper > header > nav > div:first-child > ul {
+.wrapper>header>.container>nav>div:first-child>ul {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--grays-500);
 }
 
-.wrapper > header > nav > div:first-child > ul > li {
+.wrapper>header>.container>nav>div:first-child>ul>li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     height: 50%;
 }
 
-.wrapper > header > nav > div:first-child > ul > li.divider {
+.wrapper>header>.container>nav>div:first-child>ul>li.divider {
     border-left: 1px solid var(--border-color);
 }
 
-.wrapper > header > nav > div:first-child ul > li > button {
+.wrapper>header>.container>nav>div:first-child ul>li>button {
     padding: 0.5rem 1rem;
     font-weight: 400;
     font-size: 1rem;
     position: relative;
 }
 
-.wrapper > header > nav > div:first-child > ul > li > button > ul > li:hover,
-.wrapper > header > nav > div:first-child > ul > li > button:hover {
+.wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li:hover,
+.wrapper>header>.container>nav>div:first-child>ul>li>button:hover {
     border-radius: var(--border-radius);
     background-color: #f8fafb;
 }
 
-.wrapper > header > nav > div:first-child > ul > li > button:hover > ul {
+.wrapper>header>.container>nav>div:first-child>ul>li>button:hover>ul {
     visibility: visible;
 }
 
-.wrapper > header > nav > div:first-child > ul > li > button > ul {
+.wrapper>header>.container>nav>div:first-child>ul>li>button>ul {
     border-radius: var(--border-radius);
     /* margin-top: 1rem; */
     padding: 0.5rem;
@@ -75,23 +79,23 @@
     /* transition: visibility 1s; */
 }
 
-.wrapper > header > nav > div:first-child > ul > li > button > ul > li:not(.divider) {
+.wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li:not(.divider) {
     padding: 8px 12px;
     min-height: 40px;
     text-align: center;
 }
 
-.wrapper > header > nav > div:first-child > ul > li > button > ul > li.divider {
+.wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li.divider {
     border-bottom: 1px solid var(--border-color);
 }
 
-.wrapper > header > nav > div:nth-child(2) {
+.wrapper>header>.container>nav>div:nth-child(2) {
     display: flex;
     margin-right: auto;
     gap: 1rem;
 }
 
-.wrapper > header > nav > div:nth-child(2) > a {
+.wrapper>header>.container>nav>div:nth-child(2)>a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -102,17 +106,17 @@
     font-size: 0.5rem;
 }
 
-.alibaba-icon > div {
+.alibaba-icon>div {
     padding-top: 0.5rem;
     height: 48px;
 }
 
-.alibaba-icon > div > h2 {
+.alibaba-icon>div>h2 {
     margin: 0;
     font-weight: 400;
 }
 
-.wrapper > header > div {
+.wrapper>header>.container>div {
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -121,18 +125,18 @@
     padding-top: 0.5rem;
 }
 
-.wrapper > header > div a {
+.wrapper>header>.container>div a {
     line-height: 2rem;
 }
 
 @media (max-width: 950px) {
-    .wrapper > header nav > div:first-child ul {
+    .wrapper>header>.container nav>div:first-child ul {
         display: none;
     }
 }
 
 @media (max-width: 500px) {
-    .wrapper > header > nav {
+    .wrapper>header>.container>nav {
         padding: 0;
     }
 }
