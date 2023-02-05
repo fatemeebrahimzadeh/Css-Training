@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    max-height: 210px;
+    max-height: 240px;
 }
 
 .details>aside>button:nth-child(1),
@@ -32,7 +32,7 @@
 .details>aside>button:nth-child(4) {
     background-color: var(--secondary-400);
     color: var(--white);
-    height: 2rem;
+    line-height: 2rem;
     border-radius: var(--border-radius);
     width: 100%;
     font-weight: 700;
@@ -43,7 +43,7 @@
     transition: background-color 0.2s;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .details>aside {
         width: 100%;
         position: static;
