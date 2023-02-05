@@ -6,7 +6,7 @@
     flex-direction: column;
     border-bottom: solid 1px var(--border-color);
     box-shadow: var(--shadow-color);
-    color: var(--text-color);
+    color: var(--grays-500);
     z-index: 100;
     background-color: white;
 
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--text-color);
+    color: var(--grays-500);
 }
 
 .wrapper > header > nav > div:first-child > ul > li {

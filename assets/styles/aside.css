@@ -20,12 +20,12 @@
 }
 
 .details > aside > div > span {
-    color: var(--secondary-color);
+    color: var(--secondary-400);
     font-weight: 600;
 }
 
 .details > aside > button {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-400);
     color: white;
     height: 2rem;
     border-radius: var(--border-radius);
