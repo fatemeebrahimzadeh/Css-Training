@@ -20,7 +20,7 @@ footer>.container>div:first-child {
     text-align: left;
 }
 
-.about-us *{
+.about-us * {
     margin: 0.5rem;
 }
 
@@ -62,4 +62,19 @@ footer>.container>div:first-child {
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+@media (max-width:400px) {
+    footer>.container>div:first-child {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    footer>.container>div:first-child>div>h4 {
+        text-align: center;
+    }
+
+    footer>.container>div:first-child>div>ul>li {
+        text-align: center;
+    }
 }
