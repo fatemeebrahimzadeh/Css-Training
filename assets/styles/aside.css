@@ -31,7 +31,7 @@
 
 .details>aside>button:nth-child(4) {
     background-color: var(--secondary-400);
-    color: white;
+    color: var(--white);
     height: 2rem;
     border-radius: var(--border-radius);
     width: 100%;

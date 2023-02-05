@@ -149,7 +149,7 @@ button {
 }
 
 .box {
-    background-color: white;
+    background-color: var(--white);
     border: var(--border-color);
     color: var(--grays-500);
     box-shadow: var(--shadow-color);
