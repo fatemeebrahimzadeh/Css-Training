@@ -1,42 +1,38 @@
-.ruls>div.box {
+.ruls-details {
     display: flex;
 }
 
-.ruls>div.box>div:first-child {
+.ruls-details-right {
     flex-basis: 20%;
     padding-left: 2rem;
     border-left: 1px solid var(--border-color);
 }
 
-.ruls>div.box>div:first-child>div {
+.ruls-details-right>div {
     display: flex;
     align-items: center;
     gap: 0.25rem;
     margin-bottom: 0.5rem;
 }
 
-.ruls>div.box>div:nth-child(2){
+.ruls-details-left{
     flex-shrink: 2;
 }
 
-.ruls>div.box>div:nth-child(2)>section>h4 {
+.ruls-details-left>section>h4 {
     margin: 0;
     font-size: small;
     padding-right: 1rem;
 }
 
-.ruls>div.box>div:nth-child(2)>section>div {
+.ruls-details-left>section>div {
     padding: 1rem;
     text-align: left;
     direction: ltr;
 }
 
-.ruls>div.box>div:nth-child(2)>section:first-child>div>div {
-    margin-left: 3rem;
-    padding: 1rem 0;
-}
-
-.ruls>div.box>div:nth-child(2)>section:nth-child(2)>div>ul {
+.ruls-details-left>section div div,
+.ruls-details-left>section div ul {
     margin-left: 3rem;
     padding: 1rem 0;
     list-style-type: disc;

@@ -79,7 +79,7 @@
         content="Alibaba Travel, travel, travel agency, travel services, tour packages, travel booking, online travel, travel deals, holiday packages">
     <meta name="robots" content="index,follow">
     <meta name="author" content="Alibaba Travel Co">
-    <meta http-equiv="refresh" content="30">
+    <!-- <meta http-equiv="refresh" content="30"> -->
 
     <meta property="og:title" content="Alibaba Travel Co | Your Trusted Travel Partner">
     <meta name="og:description"
@@ -96,7 +96,6 @@
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/gallery.css">
-    <link rel="stylesheet" href="./assets/styles/main-header.css">
     <link rel="stylesheet" href="./assets/styles/aside.css">
     <link rel="stylesheet" href="./assets/styles/features.css">
     <link rel="stylesheet" href="./assets/styles/other-places.css">
@@ -128,10 +127,10 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <header class="header">
             <div class="container">
-                <nav>
-                    <div>
+                <nav class="nav-bar">
+                    <div class="nav-bar__right">
                         <a title="https://www.alibaba.ir" href="https://www.alibaba.ir" class="alibaba-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" role="img">
                                 <g fill-rule="nonzero" fill="none">
@@ -229,7 +228,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="nav-bar__left">
                         <a title="Online support center" href="#">
                             <svg viewbox="0 0 24 24" width="1.5em" fill="currentColor" class="ml-1" data-v-c2875078>
                                 <path
@@ -257,7 +256,7 @@
                         </a>
                     </div>
                 </nav>
-                <div>
+                <div class="header__anchor-tags">
                     <div>
                         <a href="#features">
                             امکانات و ویژگی‌ها
@@ -281,33 +280,21 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="main">
             <div class="container">
-                <div class="navigation">
+                <div class="bread-crumbs">
                     <a title="hotel reservation" href="#">
                         رزرو هتل
                     </a>
-                    <svg viewbox="0 0 24 24" width=".8rem" height=".8rem" fill="gray" aria-hidden="true"
-                        class="rtl-only mx-2 shrink-0" data-v-4e9eb028>
-                        <path
-                            d="M17.042 22.678c-.626.53-1.55.51-2.152-.045l-.052-.051-.1-.108-7.973-9.423a1.627 1.627 0 0 1-.127-1.93l.092-.128.046-.058 7.973-9.421a1.627 1.627 0 0 1 2.606 1.938l-.087.12-.045.056L10.139 12l7.094 8.385a1.627 1.627 0 0 1-.097 2.208l-.094.086Z"
-                            fill-rule="evenodd"></path>
-                    </svg>
                     <a title="Rome city hotels" href="#">
                         هتل های شهر Rome
                     </a>
-                    <svg viewbox="0 0 24 24" width=".8rem" height=".8rem" fill="gray" aria-hidden="true"
-                        class="rtl-only mx-2 shrink-0" data-v-4e9eb028>
-                        <path
-                            d="M17.042 22.678c-.626.53-1.55.51-2.152-.045l-.052-.051-.1-.108-7.973-9.423a1.627 1.627 0 0 1-.127-1.93l.092-.128.046-.058 7.973-9.421a1.627 1.627 0 0 1 2.606 1.938l-.087.12-.045.056L10.139 12l7.094 8.385a1.627 1.627 0 0 1-.097 2.208l-.094.086Z"
-                            fill-rule="evenodd"></path>
-                    </svg>
                     <a title="Hotel Villa Agrippina Gran Meliá Rome" href="#">
                         هتل Villa Agrippina Gran Meliá رم
                     </a>
                 </div>
                 <section class="gallery">
-                    <button>
+                    <button class="secedory-button">
                         <svg viewbox="0 0 24 24" width="1.5em" fill="currentColor" data-v-b543768c>
                             <path
                                 d="M20.251 4.5c1.24 0 2.25 1.01 2.25 2.249v10.5c0 .276-.058.536-.149.78l.004.005-.007.006a2.246 2.246 0 0 1-2.098 1.46H3.749A2.253 2.253 0 0 1 1.5 17.25V6.749c0-1.24 1.009-2.25 2.25-2.25h16.5Zm0 1.5H3.749A.75.75 0 0 0 3 6.749v8.096l1.987-3.12c.79-1.24 2.172-1.975 3.706-1.975h.06c1.553.02 2.938.79 3.703 2.06l.828 1.374a4.495 4.495 0 0 1 2.639-.853c1.427 0 2.76.66 3.566 1.766L21 16.172V6.749a.75.75 0 0 0-.749-.75Zm-5.197.75c1.21 0 2.196.985 2.196 2.196v.108a2.198 2.198 0 0 1-2.196 2.196h-.109a2.198 2.198 0 0 1-2.195-2.196v-.108c0-1.211.985-2.196 2.195-2.196h.11Z">
@@ -329,9 +316,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="header">
+                <section class="hotel-header">
                     <h1>هتل Villa Agrippina Gran Meliá رم</h1>
-                    <div>
+                    <div class="hotel-header__details">
                         <div>
                             <svg viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor"
                                 class="ml-1 text-2 self-center" data-v-6bdbc8e3="">
@@ -348,30 +335,30 @@
                             </span>
                             <span>Via del Gianicolo 3, 00165 Rom</span>
                         </div>
-                        <div class="share">
+                        <button class="share tertiary-button">
                             <span>اشتراک گذاری</span>
                             <svg viewBox="0 0 24 24" width="1rem" height="1rem" fill="currentColor" data-v-6bdbc8e3="">
                                 <path
                                     d="M17.625 3a3.375 3.375 0 1 1-2.618 5.505l-5.364 2.65a3.381 3.381 0 0 1 0 1.69l5.364 2.65a3.375 3.375 0 1 1-.665 1.345l-5.388-2.662a3.375 3.375 0 1 1 0-4.355l5.388-2.663A3.375 3.375 0 0 1 17.625 3Z">
                                 </path>
                             </svg>
-                        </div>
+                        </button>
                     </div>
                 </section>
-                <div class="details">
-                    <aside class="box">
-                        <form action="https://www.alibaba.ir/">
+                <div class="hotel-details">
+                    <aside class="sidebar box">
+                        <form class="room-search" action="https://www.alibaba.ir/">
                             <input type="date" name="date" title="date"> </input>
                             <input type="number" name="passenger-picker" title="passenger-picker"> </input>
                             <div>شروع از <span>289,249,000</span> <sub>ریال</sub></div>
-                            <button type="submit">مشاهده اتاق‌های موجود</button>
+                            <button class="primary-button" type="submit">مشاهده اتاق‌های موجود</button>
                         </form>
                     </aside>
                     <div class="detail-container">
-                        <section id="features" class="features">
-                            <header>
+                        <section class="features" id="features">
+                            <header class="features-header">
                                 <h3>امکانات و ویژگی‌ها</h3>
-                                <button>
+                                <button class="tertiary-button">
                                     <span>مشاهده همه امکانات</span>
                                     <svg viewBox="0 0 24 24" width="14px" height="14px" fill="currentColor"
                                         data-v-3dfc04ae="">
@@ -381,7 +368,7 @@
                                     </svg>
                                 </button>
                             </header>
-                            <div class="box">
+                            <div class="features-box box">
                                 <ul>
                                     <li>
                                         <svg viewBox="0 0 24 24" width="1.25rem" height="1.25rem" fill="currentColor"
@@ -510,34 +497,34 @@
                             </div>
                         </section>
                         <section id="other-places" class="other-places">
-                            <header>
+                            <header class="other-places-header">
                                 <h3>مکان‌های مهم اطراف هتل</h3>
                             </header>
-                            <div class="box"></div>
+                            <div class="map-container box"></div>
                         </section>
                         <section id="rooms" class="rooms">
-                            <header>
+                            <header class="rooms-header">
                                 <h3>اتاق‌ها</h3>
                                 <div>
-                                    <button>
+                                    <button class="secedory-button">
                                         همه موارد
                                     </button>
-                                    <button>
+                                    <button class="secedory-button">
                                         <span class="RO">RO</span>
                                         بدون وعده غذایی
                                     </button>
-                                    <button>
+                                    <button class="secedory-button">
                                         <span class="BB">BB</span>
                                         به همراه صبحانه
                                     </button>
                                 </div>
                             </header>
-                            <div>
-                                <article class="box">
-                                    <header>
+                            <div class="rooms-container">
+                                <article class="article box">
+                                    <header class="article-header">
                                         <h4>Deluxe Single Room - With Breakfast</h4>
                                     </header>
-                                    <section>
+                                    <section class="article-details">
                                         <div>
                                             <span class="BB">BB</span>
                                             به همراه صبحانه
@@ -581,17 +568,17 @@
                                             </details>
                                         </div>
                                     </section>
-                                    <div>
+                                    <div class="article-price">
                                         <div><strong>289,249,000</strong> <sub>ریال</sub></div>
                                         <button>رزرو اتاق</button>
                                         <div>قیمت برای 2 شب</div>
                                     </div>
                                 </article>
-                                <article class="box">
-                                    <header>
+                                <article class="article box">
+                                    <header class="article-header">
                                         <h4>Deluxe Single Room - With Breakfast</h4>
                                     </header>
-                                    <section>
+                                    <section class="article-details">
                                         <div>
                                             <span class="BB">BB</span>
                                             به همراه صبحانه
@@ -635,17 +622,17 @@
                                             </details>
                                         </div>
                                     </section>
-                                    <div>
+                                    <div class="article-price">
                                         <div><strong>289,249,000</strong> <sub>ریال</sub></div>
                                         <button>رزرو اتاق</button>
                                         <div>قیمت برای 2 شب</div>
                                     </div>
                                 </article>
-                                <article class="box">
-                                    <header>
+                                <article class="article box">
+                                    <header class="article-header">
                                         <h4>Deluxe Single Room - With Breakfast</h4>
                                     </header>
-                                    <section>
+                                    <section class="article-details">
                                         <div>
                                             <span class="BB">BB</span>
                                             به همراه صبحانه
@@ -689,7 +676,7 @@
                                             </details>
                                         </div>
                                     </section>
-                                    <div>
+                                    <div class="article-price">
                                         <div><strong>289,249,000</strong> <sub>ریال</sub></div>
                                         <button>رزرو اتاق</button>
                                         <div>قیمت برای 2 شب</div>
@@ -701,11 +688,11 @@
                             </div>
                         </section>
                         <section id="ruls" class="ruls">
-                            <header>
+                            <header class="ruls-header">
                                 <h3>قوانین و مقررات</h3>
                             </header>
-                            <div class="box">
-                                <div>
+                            <div class="ruls-details box">
+                                <div class="ruls-details-right">
                                     <div>
                                         <svg viewBox="0 0 24 24" width="1rem" height="1rem" fill="currentColor"
                                             class="ml-1" data-v-76a1555f="">
@@ -725,7 +712,7 @@
                                         <span>ساعت خروج</span>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="ruls-details-left">
                                     <section>
                                         <h4>نکات ضروری</h4>
                                         <div>
@@ -764,10 +751,10 @@
                             </div>
                         </section>
                         <section class="about-hotel">
-                            <header>
+                            <header class="about-hotel-header">
                                 <h3>درباره هتل Villa Agrippina Gran Meliá رم</h3>
                             </header>
-                            <div class="box">
+                            <div class="about-hotel-details box">
                                 Centrally located in Rome, Gran Meliá Rome Villa Agrippina -The Leading Hotels of the
                                 World is within a 15-minute walk of Passeggiata del Gianicolo and Castel Sant'Angelo.
                                 This 5-star hotel is 1.4 mi (2.2 km) from Santa Maria in Trastevere and 1.5 mi (2.4 km)
@@ -836,7 +823,7 @@
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="container">
                 <div>
                     <div>
@@ -922,7 +909,7 @@
                     <small>کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق به شرکت سفرهای علی‌بابا
                         می‌باشد. (نسخه 1.211.4)</small>
                     <div>
-                        <a href="">
+                        <a class="social-media-icon" href="">
                             <svg viewBox="0 0 25 25" width="35" height="35" fill="currentColor" class="block"
                                 title="Telegram logo">
                                 <path
@@ -930,7 +917,7 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="">
+                        <a class="social-media-icon" href="">
                             <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor" class="block"
                                 title="youtube logo">
                                 <path
@@ -938,7 +925,7 @@
                                     fill-rule="evenodd"></path>
                             </svg>
                         </a>
-                        <a href="">
+                        <a class="social-media-icon" href="">
                             <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" class="block"
                                 title="Twitter logo">
                                 <path
@@ -946,7 +933,7 @@
                                     fill-rule="evenodd"></path>
                             </svg>
                         </a>
-                        <a href="">
+                        <a class="social-media-icon" href="">
                             <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" class="block"
                                 title="Aparat logo">
                                 <path
@@ -954,7 +941,7 @@
                                     fill-rule="evenodd"></path>
                             </svg>
                         </a>
-                        <a href="">
+                        <a class="social-media-icon" href="">
                             <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" class="block"
                                 title="Instagram logo">
                                 <path
@@ -962,7 +949,7 @@
                                     fill-rule="evenodd"></path>
                             </svg>
                         </a>
-                        <a href="">
+                        <a class="social-media-icon" href="">
                             <svg viewBox="0 0 32 32" width="24" height="24" fill="currentColor" class="block"
                                 title="Linkedin logo">
                                 <path

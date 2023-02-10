@@ -1,17 +1,17 @@
-.wrapper>footer {
+.wrapper>.footer {
     background-color: var(--white);
 }
 
-.wrapper>footer>.container {
+.wrapper>.footer>.container {
     margin: auto;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    width: 1200px;
     padding: 1rem;
     gap: 1rem;
 }
 
-footer>.container>div:first-child {
+.footer>.container>div:first-child {
     display: flex;
     justify-content: space-around;
 }
@@ -64,17 +64,21 @@ footer>.container>div:first-child {
     align-items: center;
 }
 
+.social-media-icon{
+    width: 36px;
+}
+
 @media (max-width:400px) {
-    footer>.container>div:first-child {
+    .footer>.container>div:first-child {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    footer>.container>div:first-child>div>h4 {
+    .footer>.container>div:first-child>div>h4 {
         text-align: center;
     }
 
-    footer>.container>div:first-child>div>ul>li {
+    .footer>.container>div:first-child>div>ul>li {
         text-align: center;
     }
 }

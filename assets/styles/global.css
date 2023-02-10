@@ -4,47 +4,47 @@
     --border-radius: 8px;
     --nav-height: 120px;
 
-    --white: #FFF;
+    --white: #fff;
     --black: #000;
-    --primary: #FDB713;
-    --primary-light: #FFE19C;
-    --primary-dark: #E3A107;
-    --secondary-100: #F2F9FF;
-    --secondary-200: #C9E3F8;
-    --secondary-300: #51A2E7;
-    --secondary-400: #0077DB;
-    --secondary-500: #00569E;
+    --primary: #fdb713;
+    --primary-light: #ffe19c;
+    --primary-dark: #e3a107;
+    --secondary-100: #f2f9ff;
+    --secondary-200: #c9e3f8;
+    --secondary-300: #51a2e7;
+    --secondary-400: #0077db;
+    --secondary-500: #00569e;
     --secondary-600: #004075;
-    --secondary-700: #001C33;
-    --grays-100: #F8FAFB;
-    --grays-150: #E2E6E9;
-    --grays-200: #BEC6CC;
-    --grays-300: #959EA6;
-    --grays-400: #6C7680;
-    --grays-500: #4B5259;
-    --grays-600: #2B2F33;
-    --grays-700: #0A0B0C;
-    --info-100: #E8F9FC;
-    --info-300: #A0E8F3;
-    --info-400: #17A2B8;
-    --info-500: #0F697A;
-    --info-700: #072F36;
-    --border-1: rgba(0, 0, 0, .12);
-    --border-2: rgba(0, 0, 0, .2);
-    --overlay: rgba(10, 11, 12, .65);
-    --bg: #F6F6F6;
-    --shadow-sm: 0 1px 1px -1px rgba(0, 0, 0, .08);
-    --shadow-md: 0 2px 5px -1px rgba(0, 0, 0, .08);
-    --shadow-lg: 0 4px 6px 0 rgba(0, 0, 0, .08);
-    --shadow-xl: 0 3px 10px 0 rgba(0, 0, 0, .12), 0 10px 10px -6px rgba(0, 0, 0, .12);
-    --shadow-bottom-sheet: 0 -20px 30px -5px rgba(0, 0, 0, .08);
-    --shadow-nav-bar: 0 -1px 0 0 rgba(0, 0, 0, .08), 0 -2px 8px 8px rgba(0, 0, 0, .04);
-    --shadow-inner: inset 0 2px 4px 0 rgb(0, 0, 0, .05);
+    --secondary-700: #001c33;
+    --grays-100: #f8fafb;
+    --grays-150: #e2e6e9;
+    --grays-200: #bec6cc;
+    --grays-300: #959ea6;
+    --grays-400: #6c7680;
+    --grays-500: #4b5259;
+    --grays-600: #2b2f33;
+    --grays-700: #0a0b0c;
+    --info-100: #e8f9fc;
+    --info-300: #a0e8f3;
+    --info-400: #17a2b8;
+    --info-500: #0f697a;
+    --info-700: #072f36;
+    --border-1: rgba(0, 0, 0, 0.12);
+    --border-2: rgba(0, 0, 0, 0.2);
+    --overlay: rgba(10, 11, 12, 0.65);
+    --bg: #f6f6f6;
+    --shadow-sm: 0 1px 1px -1px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 2px 5px -1px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 4px 6px 0 rgba(0, 0, 0, 0.08);
+    --shadow-xl: 0 3px 10px 0 rgba(0, 0, 0, 0.12), 0 10px 10px -6px rgba(0, 0, 0, 0.12);
+    --shadow-bottom-sheet: 0 -20px 30px -5px rgba(0, 0, 0, 0.08);
+    --shadow-nav-bar: 0 -1px 0 0 rgba(0, 0, 0, 0.08), 0 -2px 8px 8px rgba(0, 0, 0, 0.04);
+    --shadow-inner: inset 0 2px 4px 0 rgb(0, 0, 0, 0.05);
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -56,7 +56,7 @@ body {
     margin: 0;
     background-color: #f6f6f6;
     padding-top: var(--nav-height);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -90,6 +90,31 @@ button {
     border: none;
     background-color: inherit;
     color: var(--grays-500);
+}
+
+.primary-button {
+    background-color: var(--secondary-400);
+    color: var(--white);
+    line-height: 2rem;
+    border-radius: var(--border-radius);
+    font-weight: 700;
+}
+
+.secedory-button {
+    border-radius: calc(2 * var(--border-radius));
+    background-color: var(--white);
+    box-shadow: var(--shadow-color);
+}
+
+.tertiary-button {
+    color: var(--secondary-400);
+    border-radius: var(--border-radius);
+}
+
+.tertiary-button:hover {
+    background-color: var(--secondary-100);
+    border: 1px solid var(--secondary-200);
+    cursor: pointer;
 }
 
 .box {

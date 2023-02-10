@@ -1,17 +1,62 @@
-.wrapper > main > .container {
+.wrapper > .main > .container {
     padding-top: 1.5rem;
     padding: 1rem;
     margin: auto;
-    max-width: 1200px;
+    width: 1200px;
 }
 
-.details {
+.bread-crumbs a:not(:first-child)::before {
+    display: inline-flex;
+    content: "";
+    /* TODO: */
+    /* Using the background-image and
+       its related properties to add
+       the SVG content */
+    background-image: url("../svg/left-arrow.svg");
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.hotel-header h1 {
+    font-size: 1.5rem;
+}
+
+.hotel-header__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel-header__details > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.rating {
+    color: #17a2b8;
+}
+
+.share {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+.hotel-header__details > div > span {
+    font-size: smaller;
+}
+
+.hotel-details {
     display: flex;
     flex-direction: row-reverse;
     position: relative;
 }
 
-.details > .detail-container {
+.hotel-details > .detail-container {
     width: 100%;
 }
 

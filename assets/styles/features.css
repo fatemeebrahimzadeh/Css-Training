@@ -2,40 +2,32 @@
     width: 100%;
 }
 
-.features>header {
+.features-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.features>header>button {
+.features-header>button {
     height: 50%;
     display: flex;
     align-items: center;
-    color: var(--secondary-400);
-    border-radius: var(--border-radius);
     font-size: smaller;
     font-weight: 500;
 }
 
-.features>header>button:hover {
-    background-color: var(--secondary-100);
-    border: 1px solid var(--secondary-200);
-    cursor: pointer;
-}
-
-.features>div.box {
+.features-box {
     display: flex;
     width: 100%;
 }
 
-.features>div>ul {
+.features-box>ul {
     flex-basis: 25%;
     display: grid;
     gap: 1rem;
 }
 
-.features>div>ul>li {
+.features-box>ul>li {
     display: flex;
     align-items: center;
     gap: 0.5rem;

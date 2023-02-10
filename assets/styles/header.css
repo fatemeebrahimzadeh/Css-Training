@@ -1,4 +1,4 @@
-.wrapper>header {
+.wrapper>.header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,58 +14,58 @@
     transition: transform 0.2s ease-out; */
 }
 
-.wrapper>header>.container {
+.wrapper>.header>.container {
     margin: auto;
+    width: 1400px;
 }
 
-.wrapper>header>.container>nav {
+.wrapper>.header>.container>.nav-bar {
     display: flex;
     justify-content: space-between;
-    gap: 26rem;
 }
 
-.wrapper>header>.container>nav>div:first-child {
+.nav-bar__right {
     display: flex;
     justify-content: space-between;
     gap: 4rem;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul {
+.nav-bar__right>ul {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--grays-500);
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li {
+.nav-bar__right>ul>li {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     height: 50%;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li.divider {
+.nav-bar__right>ul>li.divider {
     border-left: 1px solid var(--border-color);
 }
 
-.wrapper>header>.container>nav>div:first-child ul>li>button {
+.nav-bar__right ul>li>button {
     padding: 0.5rem 1rem;
     font-weight: 400;
     font-size: 1rem;
     position: relative;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li:hover,
-.wrapper>header>.container>nav>div:first-child>ul>li>button:hover {
+.nav-bar__right>ul>li>button>ul>li:hover,
+.nav-bar__right>ul>li>button:hover {
     border-radius: var(--border-radius);
     background-color: #f8fafb;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li>button:hover>ul {
+.nav-bar__right>ul>li>button:hover>ul {
     visibility: visible;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li>button>ul {
+.nav-bar__right>ul>li>button>ul {
     border-radius: var(--border-radius);
     /* margin-top: 1rem; */
     padding: 0.5rem;
@@ -78,24 +78,24 @@
     visibility: hidden;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li:not(.divider) {
+.nav-bar__right>ul>li>button>ul>li:not(.divider) {
     padding: 8px 12px;
     min-height: 40px;
     text-align: center;
     font-size: small;
 }
 
-.wrapper>header>.container>nav>div:first-child>ul>li>button>ul>li.divider {
+.nav-bar__right>ul>li>button>ul>li.divider {
     border-bottom: 1px solid var(--border-color);
 }
 
-.wrapper>header>.container>nav>div:nth-child(2) {
+.nav-bar__left {
     display: flex;
     margin-right: auto;
     gap: 1rem;
 }
 
-.wrapper>header>.container>nav>div:nth-child(2)>a {
+.nav-bar__left>a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -116,7 +116,7 @@
     font-weight: 400;
 }
 
-.wrapper>header>.container>div {
+.header__anchor-tags {
     display: flex;
     justify-content: space-around;
     margin: auto;
@@ -125,24 +125,24 @@
     padding-top: 0.5rem;
 }
 
-.wrapper>header>.container>div a {
+.header__anchor-tags a {
     line-height: 2rem;
 }
 
 @media (max-width: 1500px) {
-    .wrapper>header>.container>nav {
+    .wrapper>.header>.container>.nav-bar {
         gap: 6rem;
     }
 }
 
 @media (max-width: 950px) {
-    .wrapper>header>.container nav>div:first-child ul {
+    .wrapper>.header>.container .nav-bar>div:first-child ul {
         display: none;
     }
 }
 
 @media (max-width: 700px) {
-    .wrapper>header>.container>nav {
+    .wrapper>.header>.container>.nav-bar {
         padding: 0;
     }
 }
