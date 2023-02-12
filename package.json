@@ -1,0 +1,22 @@
+{
+  "name": "alibaba-hotel-page",
+  "version": "1.0.0",
+  "description": "css practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatemeebrahimzadeh/alibaba-hotel-page.git"
+  },
+  "author": "fateme ebrahimzadeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatemeebrahimzadeh/alibaba-hotel-page/issues"
+  },
+  "homepage": "https://github.com/fatemeebrahimzadeh/alibaba-hotel-page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
