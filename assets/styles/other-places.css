@@ -1,3 +1,7 @@
+#other-places {
+    scroll-margin-top: var(--nav-height);
+}
+
 .map-container {
     min-height: 400px;
     width: 100%;

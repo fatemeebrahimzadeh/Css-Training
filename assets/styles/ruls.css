@@ -1,3 +1,7 @@
+#ruls {
+    scroll-margin-top: var(--nav-height);
+}
+
 .ruls-details {
     display: flex;
 }
@@ -15,7 +19,7 @@
     margin-bottom: 0.5rem;
 }
 
-.ruls-details-left{
+.ruls-details-left {
     flex-shrink: 2;
 }
 
