@@ -2,7 +2,7 @@
     padding-top: 1.5rem;
     padding: 1rem;
     margin: auto;
-    width: 1200px;
+    width: 1000px;
 }
 
 .bread-crumbs a:not(:first-child)::before {
@@ -60,9 +60,55 @@
     width: 100%;
 }
 
-@media (max-width: 700px) {
-    .details {
+/* laptop */
+@media (max-width: 1280px) {
+    .wrapper > .main > .container {
+        width: 900px;
+    }
+}
+
+/* desktop-portrait */
+@media (max-width: 1024px) {
+    .wrapper > .main > .container {
+        width: 700px;
+    }
+}
+
+/* ipad-portrait */
+@media (max-width: 768px) {
+    .wrapper > .main > .container {
+        width: 300px;
+    }
+    .hotel-details {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+/* iPhone-6-plus */
+@media (max-width: 414px) {
+    .wrapper > .main > .container {
+        width: 270px;
+    }
+}
+
+/* iPhone-6 */
+@media (max-width: 375px) {
+    .wrapper > .main > .container {
+        width: 250px;
+    }
+}
+
+/* android-portrait */
+@media (max-width: 360px) {
+    .wrapper > .main > .container {
+        width: 230px;
+    }
+}
+
+/* iPhone-4 */
+@media (max-width: 320px) {
+    .wrapper > .main > .container {
+        width: 200px;
     }
 }
